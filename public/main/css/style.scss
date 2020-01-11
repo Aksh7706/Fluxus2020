@@ -193,8 +193,8 @@ body {
             &__img2 {
                 display: block;
                 position: absolute;
-                top: -7%;
-                right: -2%;
+                top: 0%;
+                right: 0%;
                 width: 300px;
                 @include respond(phone) {
                     position: absolute;
@@ -723,7 +723,7 @@ body {
     }
     &__logo {
         display: inline-block;
-        width: 180px;
+        width: 300px;
     }
     &__navigation {
         border-top: 1px solid $color-grey-dark;
