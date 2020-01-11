@@ -193,9 +193,9 @@ body {
             &__img2 {
                 display: block;
                 position: absolute;
-                top: 2%;
-                right: 2%;
-                width: 80px;
+                top: -7%;
+                right: -2%;
+                width: 300px;
                 @include respond(phone) {
                     position: absolute;
                     display: block;
