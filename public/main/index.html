@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel='icon' href='favicon.ico' type='image/x-icon'/ > -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The official techwiki page of FLuxus" />
+    <meta name="keywords" content="techfest, cultural fest, iit, fluxus ,iit indore fest , iit indore show, fluxus iit indore, Amit trivedi iit indore, Best College Festival in india, fluxus 2020 , fluxus ,Fluxus, fluxus iit , indore iit fest , iit indore fest competition , music competition iit indore, techfest iit indore, rock band competition iit indore, the local train iit indore, iit indore workhops , iit indore lecture series"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fluxus, IIT Indore | Central India's Largest College Festival </title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="//code.jquery.com/jquery-3.2.0.min.js"></script>
+    <script src='jquery.fullpage.min.js'></script>
+    <style>
+        /* Hide the images by default */
+        
+        @media only screen and (max-width: 37.5em) {
+            .footer {
+                -webkit-mask-size: 400%;
+            }
+        }
+        
+        .slideshow-container {
+            width: 100%;
+            display: block;
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        /* Next & previous buttons */
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./about-fluxus/styles.css">
+
+    <style>
+        #fullpage {
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        #fullpage section {
+            height: 100vh;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 30;
+            top: 0;
+            left: 0;
+            background-image: url(./img/backGround.jpg);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            font-family: "IM Fell English", serif;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: #5F6B5B;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .sidenav_span {
+            font-size: 40px;
+            cursor: pointer;
+            color: #5F6B5B;
+            position: fixed;
+            z-index: 25;
+            top: 0px;
+            left: 20px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .sidenav_span {
+                font-size: 30px;
+                color: rgba(212, 1, 1, 0.651);
+            }
+            .sidenav {
+                background-image: none;
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav_span {
+                font-size: 25px;
+            }
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        
+        @media only screen and (max-width: 37.5em) {
+            .header .layer--1 {
+                display: none;
+            }
+            .header .layer--2 {
+                display: none;
+            }
+            .header .layer--3 {
+                display: none;
+            }
+            .header .layer--4 {
+                background-image: url(../img/Artboard2.jpg);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body id="body-cursor2">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#section__about" onclick="closeNav()">About</a>
+        <a href="#section__technical" onclick="closeNav()">Technical</a>
+        <a href="#section__cultural" onclick="closeNav()">Cultural</a>
+        <a href="#section__speakers" onclick="closeNav()">Speakers</a>
+        <a href="#section__days" onclick="closeNav()">Events</a>
+        <a href="/app" onclick="closeNav()">Register</a>
+        <a href="#section__sponsors" onclick="closeNav()">Sponsors</a>
+    </div>
+    <span class="sidenav_span" onclick="openNav()"><strong><b>&#9776;</b></strong></span>
+
+    <header class="header">
+        <div class="layer">
+            <div class="layer--1">
+                <!--<img class="layer--1__img1" src="./img/Fluxus_mobile_banner0.png" alt="" srcset="">-->
+                <img class="layer--1__img2" src="logo.jpg" alt="" srcset="">
+                <a href="/app"> <img class="layer--1__img3" src="./img/Registerbutton.png" alt="" srcset=""> </a>
+            </div>
+            <div class="layer--2">
+
+            </div>
+            <div class="layer--3">
+                <!-- <img class="layer--3__img" src="./img/button.png" alt="" srcset=""> -->
+                <a href="https://fluxus2020-fd5e1.web.app">
+                    <img class="layer--3__img2" src="./img/RegisterSign.png" alt="" srcset="">
+                </a>
+                <!-- <img class="layer--3__img" src="./img/Fluxus_Banner.svg">--></div>
+            <div class="layer--4"></div>
+        </div>
+    </header>
+
+    <section class="section__about" id="section__about">
+        <!-- <iframe src="./about-fluxus/index.html" id="iFrame1" width="100%" height="100%" frameborder="0"></iframe> -->
+        <div class="container_parent">
+            <div class="container outermost">
+                <div class="topBorder"></div>
+                <div class="leftBorder"></div>
+                <div class="rightBorder"></div>
+                <div class="bottomBorder"></div>
+                <div class="row title-containing" style="margin-bottom: 0px !important;">
+                    <strong>ABOUT US</strong>
+                </div>
+
+                <!--  <div class="line"></div>
+                <div class="just-below-title">
+                    <div>YEAR NO. 10</div>
+                    <div class="mid"> FEB 7 - FEB 9 2020</div>
+                    <div>IIT_INDORE</div>
+                </div> -->
+                <div class="line a"></div>
+                <div class="grid">
+                    <div class="lp borderRightP " id="bP">
+                        <!--   <div class="superSection"><div class="sectionTitle">WHAt IS FLUXUS?</div> </div> -->
+                        <div class="fluxusText">
+                            <p class="ab">
+                                Fluxus, IIT Indore's annual techno-cultural fest is the Central India's biggest and most anticipated event. With shows from renowned artists like Farhan Akhtar, Sunidhi Chauhan, Shirley Setia and Amit Trivedi to up-and-coming performers like The Local
+                                Train, Fluxus has witnessed exhilarating performances from both Indian and international artists alike. Our annual Fashion Flagship Event, 'Campus Princess', adorned Miss India Koyal Rana as a judge in the year 2019. Entrepreneurs
+                                and leaders such as Farrhad Acidwalla have addressed the students and visitors at Fluxus.</p>
+
+                            <p>
+                                With preparations to exceed the 25,000 footfall of Fluxus '19 ongoing, expectations are that Fluxus '20 will be its biggest edition yet.
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="rp">
+                        <h1 class="centeredText">PRONITES</h1>
+
+                        <div class="slider-image">
+                            <!-- <img u="image" src="./img/00.png" alt="internet marketing consultancy" /> -->
+                            <div class="slideshow-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext"></div>
+                                    <img src="./img/about/00.png" style="width:100%">
+                                    <div class="text">Amit Trivedi (2019)</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext"></div>
+                                    <img src="./img/about/02.png" style="width:100%">
+                                    <div class="text">Farhan Akhtar (2015)</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext"></div>
+                                    <img src="./img/about/03.png" style="width:100%">
+                                    <div class="text">Sunidhi Chauhan (2016)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+
+                </div>
+                <img class="folding" alt="old newspaper folding corner" src="./img/folding.png" />
+            </div>
+            <div class="line" id="bottom"></div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="section__technical" id="section__technical">
+        <div class="section__technical__head">
+            <h1 class="section__technical__head--main">Technical</h1>
+        </div>
+        <div class="section__technical__content">
+            <iframe src="./technical-Fluxus/index2.html" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <section class="section__cultural" id="section__cultural">
+        <div class="section__cultural__head">
+            <h1 class="section__cultural__head--main">CULTURALS</h1>
+        </div>
+        <div class="section__cultural__content">
+            <iframe src="./cultural-fluxus/index.html" frameborder="0"></iframe>
+        </div>
+    </section>
+
+
+    <section class="section__speakers" id="section__speakers">
+        <div class="section__speakers__head">
+            <h1 class="section__speakers__head--content">SPEAKERS</h1>
+        </div>
+        <div class="section__speakers__office">
+            <div class="section__speakers__office--container">
+                <div class="section__speakers__office--container__content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-wrapper__layer">&nbsp;</div>
+                            <div class="swiper-slide" style="background-image:url(./img/temp_img/1.jpg);"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/temp_img/2.jpg);"></div>
+
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-white"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section days code starts here -->
+
+    <section class="section__days" id="section__days" ss-style-doublediagonal-4 ">
+        <div class="section__days__head ">
+            <h1 class="section__days__head--main ">Events</h1>
+        </div>
+        <div class="section__days__content ">
+            <iframe src="./events-fluxus/index.html "></iframe></div>
+        <!-- <div class="sections__days__svg ">
+            <svg id="clouds " xmlns="http://www.w3.org/2000/svg " version="1.1 " width="100% " height="100 " viewBox="0 0 100 100 " preserveAspectRatio="none ">
+                    <path d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100 M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100 M35 100 Q 40 10 45 100 M40 100 Q 45 50
+        50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100 M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100 M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100 M90 100 Q 95 25 100 100 M95 100 Q
+        100 15 105 100 Z ">
+                    </path>
+                </svg>
+        </div> -->
+
+    </section>
+
+    <!-- section days ends here -->
+    <section class="section__sponsors " id="section__sponsors ">
+        <div class="section__sponsors__head ">
+            Sponsors
+        </div>
+        <div class="section__sponsors__content ">
+            <iframe src="./sponsors-Fluxus/index.html " frameborder="0 "></iframe>
+        </div>
+    </section>
+
+    <!-- <section class="section__footer ">
+        <div class="section__footer__container ">
+
+        </div>
+    </section> -->
+
+    <footer class="footer " id="footer ">
+        <div class="row " style=" padding-left: 2rem; padding-right: 2rem; padding-top: 2rem; ">
+            <div class="col-1-of-2 " id="col3 ">
+                <!-- <div class="footer__navigation ">
+                    <ul class="footer__list ">
+                        <li class="footer__item "><a href="#footer " class="footer__link ">Quick Links</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <h2 style="margin-bottom: 0.5rem; ">Contact Numbers :-</h2>
+                <div class="footer__navigation ">
+                    <ul class="footer__list " style="float: none !important; ">
+                        <i class="fa fa-link "></i> &nbsp;
+                        <li class="footer__item " style="margin-bottom: 15px; ">
+                        <a href="# " class="footer__link ">
+                        Technical Coordinators :-
+                        </br><span style="padding-top: 5px; ">
+                        Yuvnish Mahlotra : +91 9467734617
+                        </br>Mohit Raj Munot : +91 6386270113
+
+                        </a>
+                        </span>
+                        </li>
+                        </br>
+                        <i class="fa fa-link "></i> &nbsp;
+                        <li class="footer__item " style="margin-bottom: 15px; ">
+                        <a href="# " class="footer__link ">
+                        Cultural Coordinator :-
+                        </br><span style="padding-top: 5px; ">
+                        Ismail Malekji : +91 6354793321
+                        </a>
+                        </span>
+                        </li>
+                        </br>
+                        <i class="fa fa-link "></i> &nbsp;
+                        <li class="footer__item " style="margin-bottom: 15px; ">
+                        <a href="# " class="footer__link ">
+                        CA Coordinator :-
+                        </br><span style="padding-top: 5px;display: inline-block; ">Shreyas - +91 9493940808</a></span></li>
+                        </br>
+                        <!-- <i class="fa fa-link "></i> &nbsp; -->
+                        <!-- <li class="footer__item " style="margin-bottom: 0.5rem; "><a href="# " class="footer__link ">dosa@iiti.ac.in</a></li>
+                        </br> -->
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2 " id="col4 ">
+                <div class="footer__logo-box ">
+                    <img alt="Full logo " class="footer__logo " src="logo.jpg " />
+                </div>
+                <p class="footer__copyright ">
+                    Built by <a href="# " id="myUniqueLinkId " class="footer__link " style="font-size: 1.3rem ">TSC</a></br>
+                    Copyright &copy; by IITI.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function openNav() {
+            document.getElementById('mySidenav').style.width = "250px ";
+        }
+
+        function closeNav() {
+            document.getElementById('mySidenav').style.width = "0 ";
+        }
+    </script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides ");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js "></script>
+    <script src="./js/swiper.min.js "></script>
+    <script src="js/imagesloaded.pkgd.min.js "></script>
+    <script src="js/TweenMax.min.js "></script>
+    <script type="text/javascript " src="./js/index.js "></script>
+
+
+</body>
+
+</html>

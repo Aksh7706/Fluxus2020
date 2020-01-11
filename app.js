@@ -40,8 +40,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //==================================================== Routes ===============================================//
 
-
 app.get('/', function(req, res) {
+    res.sendFile('public/main/index.html', { root: __dirname });
+});
+
+app.get('/app', function(req, res) {
     res.sendFile('public/index.html', { root: __dirname });
 });
 
@@ -152,6 +155,7 @@ app.post('/fluxus_register', async function(req, res) {
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/public/details'));
 app.use(express.static(__dirname + '/public/dashboard'));
+app.use(express.static(__dirname + '/public/main'));
 
 //==================================================== Server ============================================================//
 

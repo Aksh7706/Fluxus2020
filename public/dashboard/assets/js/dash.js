@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
         } else {
-            window.location.href = "/";
+            window.location.href = "/app";
         }
     });
 

@@ -27,13 +27,15 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
+
 </head>
 
 <body>
 
     <div class="limiter">
         <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-            <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+            <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33" id="f12" style="z-index: 2000;display: block; background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); height: 363px; border-radius: 10px;"></div>
+            <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33" id="foo">
                 <form class="login100-form validate-form flex-sb flex-w">
                     <span class="login100-form-title p-b-53">
 						Sign In With
@@ -111,7 +113,7 @@
 
 
     <div id="dropDownSelect1"></div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.js"></script>
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
 

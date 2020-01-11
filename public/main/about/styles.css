@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #110;
+    padding: 1.25rem 1.25rem;
+    font-size: 150%;
+    height: 100vh;
+}
+
+.title-containing {
+    display: inline-block;
+}
+
+.title-containing strong {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.6rem;
+    line-height: 6rem;
+    display: block;
+    margin-top: 0.6rem;
+    font-family: "IM Fell English", serif;
+}
+
+.container {
+    display: block;
+    height: 100vh;
+    max-width: 78rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.outermost {
+    text-align: center;
+    background: url(images/seamlesspaper1.jpg) repeat scroll 0 0 transparent;
+    position: relative;
+    font-family: "Special Elite", times new roman, cursive;
+    padding: 0.6rem 1.5rem;
+}
+
+.topBorder {
+    background: url(images/rough-edge.png) repeat scroll 0 0 transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.56rem;
+}
+
+.leftBorder {
+    background: url(images/rough-edge-l.png) repeat scroll 0 0 transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1.56rem;
+}
+
+.rightBorder {
+    background: url(images/rough-edge-r.png) repeat scroll 0 0 transparent;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1.56rem;
+}
+
+.bottomBorder {
+    background: url(images/rough-edge-b.png) repeat scroll 0 0 transparent;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.56rem;
+}
+
+.folding {
+    top: 0;
+    right: 0;
+    height: 6rem;
+    width: 6rem;
+    z-index: 999;
+}
+
+.leftBorder,
+.rightBorder,
+.bottomBorder,
+.topBorder,
+.folding {
+    position: absolute;
+}
+
+.line {
+    background: url(images/uglyline.png) repeat scroll 0 0 transparent;
+    height: 0.18rem;
+    margin: 0.06rem 0 0.3rem;
+    width: 100%;
+}
+
+.just-below-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.1875rem;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.a {
+    height: 0.25rem;
+}
+
+.grid {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    /* min-height: 100%; */
+}
+
+.superSection {
+    display: flex;
+    min-width: 100%;
+}
+
+.sectionTitle {
+    background: url(images/darkbackg.png) repeat-x scroll 0px 0px transparent;
+    color: #ebcca0;
+    position: relative;
+    font-size: 1.5em;
+    margin: 0.9375rem 0 0.3125rem 0;
+    letter-spacing: 0.0625rem;
+    text-align: center;
+    padding: 0.3125rem 5%;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-weight: bold;
+    display: block;
+}
+
+.lp {
+    display: flex;
+    flex-direction: column;
+    flex: 3.1;
+    /*CHANGE LATER*/
+}
+
+.rp {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+}
+
+.fluxusText {
+    position: relative;
+    top: 0.3125rem;
+    letter-spacing: 0.0625rem;
+    text-align: justify;
+    text-indent: 1.3125rem;
+    line-height: 0.875rem;
+    font-size: 0.625rem;
+}
+
+.borderRightP {
+    background: url(images/uglyline-vertical.png) repeat-y scroll right center transparent;
+    padding-right: 0.625rem;
+}
+
+.dosa-out {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+}
+
+.part-1 {
+    display: flex;
+    flex: 1;
+}
+
+.part-2 {
+    display: flex;
+    flex: 1;
+    padding-left: 0.3125rem;
+}
+
+.dosa-msg {
+    display: block;
+    letter-spacing: 0.0625rem;
+    text-align: justify;
+    text-indent: 1.3125rem;
+    line-height: 0.875rem;
+    font-size: 0.625rem;
+}
+
+.centeredText {
+    text-align: center;
+    width: 100%;
+    font-family: "IM Fell English", serif !important;
+    font-size: 1.875rem;
+    margin: 1.25rem 0 0.3125rem;
+    line-height: 1em;
+}
+
+::selection {
+    background: #605341;
+    color: #e5c59c;
+}
+
+.wrapSlider {
+    text-align: center;
+    max-width: 50rem;
+    margin: auto;
+}
+
+.slider {
+    text-align: left;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    margin: 0px 5px 5px 0px;
+    top: 0px;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

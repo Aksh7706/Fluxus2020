@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MANTHAN</title>
+    <meta name="description" content="The official techwiki page of FLuxus" />
+    <meta name="keywords" content="tech, techfest, cultfest, iit, fluxus, moodi,iit indore, iit bombay" />
+    <meta name="author" content="iiti" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <style>
+        .responsive-tabs {}
+        
+        .responsive-tabs dt {
+            padding: 0.5em;
+            border-top: 1px solid #ccc;
+            cursor: pointer;
+        }
+        
+        .responsive-tabs dt:first-child {
+            border-top: 0;
+        }
+        
+        .responsive-tabs .active {
+            background-color: rgba(204, 204, 204, 0.507);
+        }
+        
+        .responsive-tabs .active+dd {
+            display: block;
+        }
+        
+        .responsive-tabs dd {
+            display: none;
+            padding: 0.5em;
+        }
+        
+        .responsive-tabs-placeholder {
+            display: none;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .responsive-tabs {
+                display: block;
+                width: 90%;
+            }
+            .responsive-tabs dt {
+                float: left;
+                border-top: 0;
+            }
+            .responsive-tabs .active+dd {
+                display: none;
+            }
+            .responsive-tabs-placeholder {
+                clear: both;
+                display: block;
+                padding: 1em;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 1em;
+            }
+        }
+        
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 10px;
+            width: 170px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 2rem;
+        }
+        
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        
+        .button:hover span {
+            padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        
+        <section class="grid3d vertical" id="grid3d">
+            
+            <!-- /grid-wrap -->
+            <div class="content show">
+                   <span class="loading"></span>
+                <div class="dummy_content show">
+                    <div class="dummy-img"><img src="img/9.png" style="width: 100%; height: 100%; max-width: 500px;" alt="img09" /></div>
+                    <div style="max-width: 785px; display: block; width:100%; margin: auto;">
+                        <dl class="responsive-tabs">
+                            <dt>Description</dt>
+                            <dd>
+                                <p>Manthan</p>
+                                <p>“Climate change is no longer some far-off problem, it is happening here, it is happening now.” -Barack Obama <br>
+                                Climate change is a global issue and is posing one of the biggest long-term threats to society. Manthan, a hackathon competition aims at resolving issues related to climate change. It consists of 2 problem statements dealing with flood disaster management and safe green housing. Participants are expected to come up with creative technological solutions to the following day to day problems by the use of both innovation and technology
+                                </p>
+                            </dd>
+
+                            <dt>Prizes</dt>
+                            <dd>
+                                <p>Coming Soon</p>
+                            </dd>
+
+                            <dt>Schedule</dt>
+                            <dd>
+                                <p>Coming Soon</p>
+                            </dd>
+
+                            <dt>Contact</dt>
+                            <dd>
+                                <p>Yash Ranjan Mishra - +91-8218665839<br>Suyash Jain - +91-8103173865</p>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <p class="dummy-text">Rules :</p>
+                    <p class="dummy-text">
+                        <button class="button" style="vertical-align:middle"><span><a href="manthan.pdf" download target="_blank">Download Rule Booklet</a></span></button>
+                        </p>
+                    <button class="button" style="vertical-align:middle" onclick="location.href='https://fluxus2020-fd5e1.web.app'"><span>Register </span></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- <p>Built by <a href="https://www.behance.net/AdamQuest">TSC</a></p> -->
+        </section>
+    </div>
+    <!-- /container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/grid3d.js"></script>
+    <script>
+        $.fn.responsiveTabs = function() {
+
+            return this.each(function() {
+                var el = $(this),
+                    tabs = el.find('dt'),
+                    content = el.find('dd'),
+                    placeholder = $('<div class="responsive-tabs-placeholder"></div>').insertAfter(el);
+
+                tabs.on('click', function() {
+                    var tab = $(this);
+
+                    tabs.not(tab).removeClass('active');
+                    tab.addClass('active');
+
+                    placeholder.html(tab.next().html());
+                });
+
+                tabs.filter(':first').trigger('click');
+            });
+
+        }
+
+
+        $('.responsive-tabs').responsiveTabs();
+    </script>
+    <script>
+        new grid3D(document.getElementById('grid3d'));
+    </script>
+</body>
+
+</html>
